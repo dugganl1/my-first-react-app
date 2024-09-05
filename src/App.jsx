@@ -1,15 +1,31 @@
-import './App.css'
-import { FavoriteFood } from './FavoriteFood.jsx'
+import "./App.css";
+import { List } from "./List";
 
 export const App = () => {
+  const animals = [
+    "Lion",
+    "Cow",
+    "Snake",
+    "Lizard",
+    "Elephant",
+    "Tiger",
+    "Zebra",
+    "Monkey",
+    "Elephant",
+    "Tiger",
+    "Zebra",
+    "Cheetah",
+    "Wolf",
+    "Fox",
+    "Rabbit",
+    "Deer",
+    "Bear",
+  ];
+
   return (
     <>
-      <h1>Hello World</h1>
-      <FavoriteFood />
-      <p className="read-the-docs">
-        I love the world and my favorite food!
-      </p>
+      <h1>Animals: </h1>
+      <List animals={animals} />
     </>
-  )
-}
-
+  );
+};
