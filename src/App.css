@@ -40,3 +40,20 @@
 .read-the-docs {
   color: red;
 }
+
+.person {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+.person input {
+  margin: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.person button {
+  margin-top: 10px;
+}

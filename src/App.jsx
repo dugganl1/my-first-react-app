@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./App.css";
 import { List } from "./List";
+import { Person } from "./Person";
 
 const COLORS = ["pink", "green", "blue", "yellow", "purple"];
 
 export const App = () => {
-  const animals = ["Lion", "Cow", "Snake", "Lizard", "Monkey", "Elephant", "Tiger"];
+  const animals = ["Lion", "Cow", "Snake", "Letard", "Lizard", "Monkey", "Elephant", "Tiger"];
 
   const [backgroundColor, setBackgroundColor] = useState(COLORS[0]);
   const [numChanges, setNumChanges] = useState(0);
@@ -40,6 +41,8 @@ export const App = () => {
         ))}
       </div>
       <p>Number of changes: {numChanges}</p>
+
+      <Person />
     </div>
   );
 };
